@@ -1,31 +1,37 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from './Nav';
+import Menu from './Menu';
+import Items from './listItems/Items';
+import Test from './listItems/Pagination';
+import Test3 from './listItems/Test3';
+import Search from './Search';
+
+import secondPage from './secondPage';
+import Slideshow from './Slideshow';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p> Time for development period </p>
-        <p> Testing again, please work </p>
+  
 
-            
+    return (
 
+        <Router>
 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+            <div className="App">
+
+                <Nav />
+                <Slideshow />
+                
+                <Menu />
+                <Search />
+                <Test3 />
+               
+                <Route path="/secondPage" component={secondPage} />
+          <secondPage />
     </div>
+    </Router>
   );
 }
 

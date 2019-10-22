@@ -1,33 +1,74 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:5vh;
+    background: rgb(73, 79, 82);
+    color: rgb(255, 255, 255);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-links {
+    width: 70%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    list-style:none;
+
+}
+.nav-links li{
+    color:white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.menu-links {
+    min-height: 5vh;
+    width: 80%;
+margin-left:10%;
+display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.menu-links li{
+    color:black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slide-container {
+    width: 100%;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 300px;
+}
+.slideshowimg{
+    width:100%;
+    height:400px;
 }
