@@ -1,12 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
-    "\\src\\cssfiles",
-    "\\src\\images",
-    "\\src\\listItems"
+    "\\src\\jsfiles"
   ],
-  "SelectedNode": "\\src\\images\\slide_3.jpg",
+  "SelectedNode": "\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }

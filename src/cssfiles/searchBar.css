@@ -1,0 +1,60 @@
+﻿.Searchbar {
+    margin-top:30px;
+    width: 80%;
+    height:50px;
+    align-items: center;
+    
+    display: inline-block;
+}
+
+#searchKeywords {
+    width:60%;
+    height:100%;
+    font-size:20px;
+}
+#searchLocation {
+    width:100%;
+    font-size: 20px;
+    height:100%;
+}
+input {
+    padding-left: 1em;
+}
+.searchIcon {
+  width:9%;
+}
+.btnSearch {
+   float:right;
+    width:5%;
+   height:55px;
+    background: limegreen;
+    color: white;
+    font-size: 17px;
+    border-left: none;
+    cursor: pointer;
+}
+    .btnSearch:hover {
+        background: green;
+    }
+    .btnSearch::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+.dropdown-content {
+    position: absolute;
+    
+    z-index: 1;
+    cursor:pointer;
+    background-color:white;
+}
+.dropdown {
+    width:30%;
+
+    height:100%;
+    position: relative;
+    display: inline-block;
+    
+}

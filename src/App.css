@@ -26,23 +26,50 @@ nav{
 
 
 .menu-links {
-    min-height: 5vh;
+    margin-top: 30px;
     width: 80%;
-margin-left:10%;
-display: flex;
+    margin-left: 10%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    cursor: pointer;
 }
-.menu-links li{
-    color:black;
+.buttonStates:hover {
+    color: white;
+    background-color: green;
+    cursor: pointer;
 }
 
 
+.menu-links li {
+    color: black;
+}
+
+.buttonStates {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+    .button1 {
+        border-radius: 12px;
+    }
 
 
-
-
+.searchIcon {
+    background-color: #4CAF50;
+    width:50px;
+    height:50px;
+    align-items:center;
+    justify-content:space-around;
+}
 
 
 
@@ -55,6 +82,8 @@ display: flex;
 .slide-container {
     width: 100%;
     margin: auto;
+    position: relative;
+   
 }
 
 h3 {
@@ -70,5 +99,5 @@ h3 {
 }
 .slideshowimg{
     width:100%;
-    height:400px;
+    height:200px;
 }

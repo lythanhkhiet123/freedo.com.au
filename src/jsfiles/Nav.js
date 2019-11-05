@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 import { Link } from 'react-router-dom';
 
 function Nav() {
@@ -8,13 +8,13 @@ function Nav() {
        
         <nav>
             <ul className="nav-links">
-                <Link to='/secondPage'>
-                    <li>First page</li>
+                <Link to='/'>
+                    <li>Home</li>
                 </Link>
                 <Link to='/secondPage'>
                     <li>Second page</li>
                 </Link>
-                <Link to='/secondPage'>
+                <Link to='/thirdPage'>
                     <li>Third page</li>
                 </Link>
                 <Link to='/secondPage'>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
-import './App.css';
+import '../App.css';
+import Search from './Search';
 
 const properties = {
     duration: 5000,
@@ -14,19 +15,21 @@ const properties = {
 }
 const Slideshow = () => {
     return (
-        <div className="slide-container">
-            <Slide {...properties}>
+        
+        <div className="slide-container" >
+            <Slide  {...properties}>
                 <div className="each-slide">
-                    <img class='slideshowimg' src={require('./images/slide_1.jpg')} />
+                    <img class='slideshowimg' src={require('../images/slide_1.jpg')} />
                 </div>
                 <div className="each-slide">
-                    <img class='slideshowimg' src={require('./images/slide_3.jpg')} />
+                    <img class='slideshowimg' src={require('../images/slide_3.jpg')} />
                 </div>
                 <div className="each-slide">
-                    <img class='slideshowimg' src={require('./images/slide_4.jpg')} />
+                    <img class='slideshowimg' src={require('../images/slide_4.jpg')} />
                 </div>
-                
-            </Slide>
+               
+            </Slide> 
+        
         </div>
     )
 }

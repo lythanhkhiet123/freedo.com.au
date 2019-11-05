@@ -1,7 +1,7 @@
 // JavaScript source code
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../App.css';
 
 function second() {
     return (
