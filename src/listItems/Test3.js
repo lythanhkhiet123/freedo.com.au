@@ -5,8 +5,9 @@ import Items from './Items';
 class Test3 extends React.Component {
     constructor() {
         super();
-        var fruits = [{ src: './slide_2.jpg', title: 'Card Title', text: 'Some quick example text to build on the card title and make up the bulk of the cards content.' },
-            { src: './slide_4.jpg', title: 'Card Title 2', text: 'Some quick example text to build on the card title and make up the bulk of the cards content.' },
+        var fruits = [{
+            src: './1.png', title: '2.5 seater couch giveaway. Needs a clean but in good condition.', text: '2.5 seater white couch giveaway. Needs a clean but in good condition. Slight tear in bottom rhs corner of base as shown in photos.Pet free, smoke free home.Measurements 2100mm W x 970mm D x 830mm H No room for it.No delivery available.Must have own ute or trailer and 2 able bodied people to collect' },
+            { src: './2.png', title: 'Card Title 2', text: 'Some quick example text to build on the card title and make up the bulk of the cards content.' },
             { src: './slide_2.jpg', title: 'Card Title 3', text: 'Some quick example text to build on the card title and make up the bulk of the cards content.' },
             { src: './slide_4.jpg', title: 'Card Title 4', text: 'Some quick example text to build on the card title and make up the bulk of the cards content.' },
             { src: './slide_4.jpg', title: 'Card Title 5', text: 'Some quick example text to build on the card title and make up the bulk of the cards content.' },

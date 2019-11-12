@@ -8,17 +8,17 @@ function Nav() {
        
         <nav>
             <ul className="nav-links">
-                <Link to='/'>
-                    <li>Home</li>
+                <Link to='/homePage'>
+                    <li><strong>Home</strong></li>
                 </Link>
-                <Link to='/secondPage'>
-                    <li>Second page</li>
+                <Link to='/Aboutus'>
+                            <li><strong>About us</strong></li>
                 </Link>
-                <Link to='/thirdPage'>
-                    <li>Third page</li>
+                <Link to='/Advertisingbusiness'>
+                                    <li><strong>Advertising your business</strong></li>
                 </Link>
-                <Link to='/secondPage'>
-                    <li>Fourth page</li>
+                <Link to='/Contactus'>
+                                            <li><strong>Contact us</strong></li>
                 </Link>
             </ul>
         </nav>

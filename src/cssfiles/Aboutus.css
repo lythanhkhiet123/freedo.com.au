@@ -1,0 +1,13 @@
+.contentBox
+{
+    width:80%;
+    margin: 0 auto;
+    text-wrap:normal;
+}
+.question {
+    float: left;
+    font-size: 20px;
+}
+.para {
+    text-align: left;
+}
