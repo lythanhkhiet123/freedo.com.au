@@ -1,7 +1,6 @@
 // JavaScript source code
 import React from 'react';
 import '../cssfiles/Contactus.css';
-import { Form } from 'react-bootstrap';
 import * as emailjs from 'emailjs-com';
 class Contactus extends React.Component {
     constructor(props) {
@@ -31,7 +30,6 @@ class Contactus extends React.Component {
         this.setState({ message: event.target.value });
     }
     handleSubmit(event) {
-        const templateId = 'template_wFQWbYdD';
         event.preventDefault();
        
         var templateParams = {
@@ -60,29 +58,29 @@ class Contactus extends React.Component {
                     <table class='tableContact' border='0px'>
                         <tr>
                             <td width='75%'>
-                        <br />
-                        <p>Name:
-                        <input class='input name' type="text" placeholder="Enter your name" value={this.state.name} onChange={this.handleChangeName} />
-                        </p>
+                                <br />
+                                <p class='field'><span class='inputfield'>Name:</span>
+                                <input class='input name' type="text" placeholder="Enter your name" value={this.state.name} onChange={this.handleChangeName} />
+                                </p>
+                           
+                                <br />
+                                <p class='field'><span class='inputfield'>Email:</span>
+                                <input class='input email' type="text" placeholder="Enter your email" value={this.state.email} onChange={this.handleChangeEmail} />
+                                </p>
 
-                        <br />
-                        <p>Email:
-                        <input class='input email' type="text" placeholder="Enter your email" value={this.state.email} onChange={this.handleChangeEmail} />
-                        </p>
+                                <br />
+                                <p class='field'><span class='inputfield'>Subject:</span>
+                                <input class='input subject' type="text" placeholder="Enter subject" value={this.state.subject} onChange={this.handleChangeSubject} />
+                                </p>
 
-                        <br />
-                        <p>Subject:
-                        <input class='input subject' type="text" placeholder="Enter subject" value={this.state.subject} onChange={this.handleChangeSubject} />
-                        </p>
+                                <br />
+                                <p class='field'><span class='inputfield'>Message:</span>
+                                    <textarea class='input message' id='message' rows="10"   placeholder="Enter Message" value={this.state.message} onChange={this.handleChangeMessage} />
+                                </p>
 
-                        <br />
-                        <p>Message:
-                        <textarea class='input message' id='message' rows="10"  placeholder="Enter Message" value={this.state.message} onChange={this.handleChangeMessage} />
-                        </p>
+                                <br />
 
-                        <br />
-
-                        <input class='submitBtn' type="submit" value="Submit" />
+                                <input class='submitBtn' type="submit" value="Submit" />
                             </td>
                        
                        

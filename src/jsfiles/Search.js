@@ -1,27 +1,15 @@
 // Imports
-import React, { Component } from 'react';
-import PlacesAutocomplete, {
-    geocodeByAddress,
-    getLatLng
-} from "react-places-autocomplete";
-import { FormGroup, Button } from 'react-bootstrap';
+import React from 'react';
+import PlacesAutocomplete from "react-places-autocomplete";
 import '../cssfiles/searchBar.css';
 
 
 
 export default function Search() {
     const [address, setAddress] = React.useState("");
-    const [coordinates, setCoordinates] = React.useState({
-        lat: null,
-        lng: null
-    });
 
-    const handleSelect = async value => {
-        const results = await geocodeByAddress(value);
-        const latLng = await getLatLng(results[0]);
-        setAddress(value);
-        setCoordinates(latLng);
-    };
+
+
     const searchOptions = {
         componentRestrictions: { country: ['au'] },
         types: ['(regions)']
@@ -42,11 +30,14 @@ export default function Search() {
 
 
 
-                    <div class="Searchbar">
-                        <input id='searchKeywords' placeholder="I'm looking for..." />
-                        <div class="dropdown">
+                    <div className="Searchbar">
+                        <div id='searchKeywords'>
+                            <input id='Keywords' placeholder="I'm looking for..." />
+                        </div>
+
+                        <div className="dropdown">
                             <input id='searchLocation' {...getInputProps({ placeholder: "Type suburb" }) } />
-                            <div class='dropdown-content'>
+                            <div className='dropdown-content'>
                                 {loading ? <div>...loading</div> : null}
 
                                 {suggestions.map(suggestion => {
@@ -65,8 +56,11 @@ export default function Search() {
                         </div>
                       
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-                        <button class='btnSearch' type="submit"><i class="fa fa-search"></i></button>
-                        
+                        <div id='btnSearch'>
+                            <button className='btnSearchSubmit' type="submit"><div id='searchb'><i className="fa fa-search"></i></div></button>
+                        </div>
+
+                       
                     </div>
                 )}
             </PlacesAutocomplete>

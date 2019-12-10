@@ -116,7 +116,7 @@ class Test2 extends React.Component {
         return (
 
 
-            <div class='pagination'>
+            <div className='pagination'>
 
 
            
@@ -137,7 +137,7 @@ class Test2 extends React.Component {
                     <a onClick={() => this.setPage(pager.totalPages)}>Last</a>
             
             
-                </div>
+           </div>
         );
     }
 }

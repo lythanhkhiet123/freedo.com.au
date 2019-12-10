@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../logo.svg';
 import '../App.css';
 import { Link } from 'react-router-dom';
 
@@ -9,17 +8,20 @@ function Nav() {
         <nav>
             <ul className="nav-links">
                 <Link to='/homePage'>
-                    <li><strong>Home</strong></li>
+                    <li>Home</li>
                 </Link>
                 <Link to='/Aboutus'>
-                            <li><strong>About us</strong></li>
+                            <li>About us</li>
                 </Link>
                 <Link to='/Advertisingbusiness'>
-                                    <li><strong>Advertising your business</strong></li>
+                                    <li>Advertising your business</li>
                 </Link>
                 <Link to='/Contactus'>
-                                            <li><strong>Contact us</strong></li>
+                                            <li>Contact us</li>
                 </Link>
+                
+
+
             </ul>
         </nav>
       

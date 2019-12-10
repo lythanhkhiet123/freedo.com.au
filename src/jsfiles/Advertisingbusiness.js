@@ -1,6 +1,5 @@
 // JavaScript source code
 import React from 'react';
-import logo from '../logo.svg';
 import '../cssfiles/Advertisingbusiness.css';
 
 function Advertisingbusiness() {

@@ -1,12 +1,10 @@
 // JavaScript source code
 import React from 'react';
-import logo from '../logo.svg';
 import '../cssfiles/Aboutus.css';
 
 function Aboutus() {
     return (
         <div class='contentBox'>
-            
             <h1 class='TitleAboutUs a'>About Us</h1>
             <i class='question a'> What is Lorem Ipsum ?</i>            <br />
 

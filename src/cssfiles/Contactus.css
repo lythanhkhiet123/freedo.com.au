@@ -19,14 +19,15 @@
     float:right;
 }
 .message{
-    width:81%;
+    width:80%;
 }
-
+.inputfield {
+    float:left;
+}
 .submitBtn {
-   
-    margin-top:20px;
-   float:right; 
-   width:80%;
+    margin-top: 20px;
+    float: right;
+    width: 80%;
     padding: 1em 3em;
     border-radius: 2em;
     box-sizing: border-box;
@@ -37,7 +38,6 @@
     background-color: #4eb5f1;
     text-align: center;
     transition: all 0.2s;
-    
 }
 .submitBtn:hover 
 {
@@ -48,10 +48,15 @@
 .tableContact{
     width:80%;
     margin: 0 auto;
+    
 }
 #email, #phone, #ontheweb{
     color:red;
 }
 table td {
     vertical-align: top;
+    
+}
+.field{
+    margin-bottom:40px;
 }

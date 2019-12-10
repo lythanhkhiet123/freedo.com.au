@@ -1,26 +1,46 @@
 import React from 'react';
 import '../cssfiles/ItemsContainer.css';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
+
+
+
 function Items(props) {
-    const myImg =  props.src ;
+
+    const myImg = props.src;
+    const image = '../images/1.png';
     const cardTitle = props.title;
     const cardText = props.text;
-
+    const id = props.id;
+    const description = props.description;
+    function truncate(str) {
+        return str.length > 39 ? str.substring(0, 40) +'...' : str;
+    }
+    
     return (
-       
             <div className='box'>
-                <Card style={{ width: '100%' }}>
+
+            <Link to={`/Description/${id},${cardTitle},${description},${cardText},require('${image}')`}>
+
+                    <Card style={{ width: '100%' }}>
                     <Card.Img className='imgContainer' variant="top" src={require(`${myImg}`)} />
                     <Card.Body>
-                    <Card.Title>{props.title}</Card.Title>
-                    <Card.Text>
-                        {props.text}
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
+
+                            
+                            <Card.Title className='cardTitle'>{truncate(cardTitle)}
+
+                        </Card.Title>
+                    
+                            <Card.Text className='cardText'>
+                            <img src={require('../images/location.png')} className='locationIconHomePage' alt='location icon' /> &nbsp;  {cardText}
+                    </Card.Text>
                     </Card.Body>
-                </Card>
+
+
+                    </Card>
+            </Link>
             </div>
-        
     );
 }
 
