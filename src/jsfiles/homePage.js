@@ -8,8 +8,7 @@ function homePage() {
 
     return (
 
-        <div>
-
+        <div style={{backgroundColor: 'rgb(229, 233, 233)'}}>
                 <Search />
                 <Menu />
                 <br/>

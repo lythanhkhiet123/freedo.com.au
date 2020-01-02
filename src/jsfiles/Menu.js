@@ -5,23 +5,23 @@ function Menu() {
     return (
         <div className="menu-links">
             
-                <button className="buttonStates button1">Victoria</button>
+                <button className="buttonStates button1">VIC</button>
            
            
-                <button className="buttonStates button1">New South Wales</button>
+                <button className="buttonStates button1">NSW</button>
             
           
-                <button className="buttonStates button1">Queensland</button>
+                <button className="buttonStates button1">QLD</button>
           
-                <button className="buttonStates button1">South Australia</button>
+                <button className="buttonStates button1">SA</button>
            
                 <button className="buttonStates button1">ACT</button>
             
-                <button className="buttonStates button1">Tasmania</button>
+                <button className="buttonStates button1">TAS</button>
             
-                <button className="buttonStates button1">Nothern Territory</button>
+                <button className="buttonStates button1">NT</button>
           
-                <button className="buttonStates button1">West Australia</button>
+                <button className="buttonStates button1">WA</button>
           
 
 

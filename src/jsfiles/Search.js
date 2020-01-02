@@ -16,7 +16,7 @@ export default function Search() {
     }
 
     return (
-        <div >
+        <div>
 
             <PlacesAutocomplete
                 searchOptions={searchOptions}
@@ -25,10 +25,6 @@ export default function Search() {
                 onSelect={setAddress}
             >
                 {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-                    
-
-
-
 
                     <div className="Searchbar">
                         <div id='searchKeywords'>
